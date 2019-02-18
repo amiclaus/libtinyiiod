@@ -19,6 +19,7 @@ project(tinyiiod C)
 set(TINYIIOD_VERSION_MAJOR 0)
 set(TINYIIOD_VERSION_MINOR 1)
 set(TINYIIOD_VERSION ${TINYIIOD_VERSION_MAJOR}.${TINYIIOD_VERSION_MINOR})
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall -Wextra")
 
 # Get the GIT hash of the latest commit
 include(FindGit OPTIONAL)
